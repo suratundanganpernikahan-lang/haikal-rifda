@@ -1,5 +1,5 @@
 # Large audio files (too big for GitHub)
-audio/
+audio/videoplayback*
 
 # IDE
 .vscode/
