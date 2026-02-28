@@ -1,0 +1,10 @@
+# Large audio files (too big for GitHub)
+audio/
+
+# IDE
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

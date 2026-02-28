@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Adat Jawa - Haikal & Rifda</title>
+    <meta name="description" content="Undangan Pernikahan Adat Jawa - Raden Mas Bagus & Nimas Ayu Sekar - 15 Juni 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ============ COVER / OPENING ============ -->
+    <div id="cover" class="cover">
+        <div class="cover-overlay"></div>
+        <div class="batik-pattern cover-batik"></div>
+        <div class="floating-petals" id="coverPetals"></div>
+        <div class="cover-content">
+            <!-- GUNUNGAN JAWA -->
+            <div class="gunungan-wrapper">
+                <img src="img/Gunungan-Wayang-563x1024-1.webp" alt="Gunungan Jawa" class="gunungan-img">
+            </div>
+            <div class="javanese-ornament cover-orn-top">&#x2766;</div>
+            <p class="cover-label">Pepanggihan Agung</p>
+            <h1 class="cover-names">
+                <span class="name-groom">Haikal</span>
+                <span class="ampersand">&amp;</span>
+                <span class="name-bride">Rifda</span>
+            </h1>
+            <p class="cover-date">07 . 09 . 2026</p>
+            <div class="cover-to">
+                <p>Dhumateng Yth.</p>
+                <p class="guest-name">Bapak/Ibu/Saudara/i</p>
+            </div>
+            <button class="btn-open" id="btnOpen">
+                <span class="btn-icon">&#x1F4DC;</span>
+                <span>Buka Undangan</span>
+            </button>
+            <div class="javanese-ornament cover-orn-bot">&#x2766;</div>
+        </div>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main id="mainContent" class="main-content hidden">
+
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo">H <span>&amp;</span> R</a>
+                <div class="nav-links">
+                    <a href="#couple">Mempelai</a>
+                    <a href="#event">Tata Cara</a>
+                    <a href="#story">Cerita</a>
+                    <a href="#gallery">Galeri</a>
+                    <a href="#rsvp">RSVP</a>
+                    <a href="#wishes">Ucapan</a>
+                </div>
+                <button class="music-toggle" id="musicToggle" aria-label="Toggle Music">
+                    <span class="music-icon">&#x1F3B5;</span>
+                    <span class="music-bars">
+                        <span></span><span></span><span></span><span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="batik-pattern hero-batik"></div>
+            <div class="floating-petals" id="heroPetals"></div>
+            <div class="hero-content reveal">
+                <!-- Small gunungan in hero -->
+                <div class="gunungan-hero">
+                    <img src="img/Gunungan-Wayang-563x1024-1.webp" alt="Gunungan" class="gunungan-hero-img">
+                </div>
+                <p class="hero-subtitle">Assalamu'alaikum Wr. Wb.</p>
+                <p class="hero-intro">Kanthi raos syukur dhumateng Gusti Alloh SWT, kula ngaturi rawuh
+                    Bapak/Ibu/Saudara/i wonten ing adicara pahargyan dhaup kula:</p>
+                <div class="hero-names">
+                    <h1 class="groom-name">Muhamad Haikal Rizaldi S.Kom</h1>
+                    <div class="heart-divider">
+                        <span class="line"></span>
+                        <span class="heart">&#x2767;</span>
+                        <span class="line"></span>
+                    </div>
+                    <h1 class="bride-name">Rifda Layna</h1>
+                    <h1 class="bride-name">Salsabila S.Pd</h1>
+                </div>
+                <p class="hero-date-display">Senin Legi, 07 September 2026</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- COUPLE SECTION -->
+        <section id="couple" class="section couple-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament">&#x2766;</div>
+                    <p class="section-subtitle">Ingkang Mengku Gati</p>
+                    <h2 class="section-title">Calon Mempelai</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <div class="couple-cards">
+                    <div class="couple-card reveal reveal-left">
+                        <div class="couple-photo">
+                            <div class="photo-frame">
+                                <img src="img/h (2).jpeg" alt="Mempelai Pria">
+                            </div>
+                        </div>
+                        <h3 class="couple-name">Muhamad Haikal Rizaldi</h3>
+                        <p class="couple-info">Putra Pertama</p>
+                        <p class="couple-parents">Bapak Muhamad Farhan<br>&amp;<br>Ibu Rahmawati</p>
+                        <p class="couple-origin">Karang Asem, Kraton</p>
+                    </div>
+                    <div class="couple-separator reveal">
+                        <span class="separator-heart">&#x2767;</span>
+                    </div>
+                    <div class="couple-card reveal reveal-right">
+                        <div class="couple-photo">
+                            <div class="photo-frame">
+                                <img src="img/r(1).jpeg" alt="Mempelai Wanita">
+                            </div>
+                        </div>
+                        <h3 class="couple-name">Rifda Layna Salsabila</h3>
+                        <p class="couple-info">Putri Kedua </p>
+                        <p class="couple-parents">Bapak Sudar<br>&amp;<br>Ibu Endangwati</p>
+                        <p class="couple-origin">Pandean, Rembang</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTDOWN SECTION -->
+        <section id="countdown" class="section countdown-section">
+            <div class="countdown-bg"></div>
+            <div class="batik-pattern countdown-batik"></div>
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament" style="color:var(--accent-light)">&#x2766;</div>
+                    <p class="section-subtitle">Ngetang Dinten</p>
+                    <h2 class="section-title">Tumuju Dinten Pepanggihan</h2>
+                </div>
+                <div class="countdown-timer reveal" id="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Dinten</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Detik</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENT / TATA CARA SECTION -->
+        <section id="event" class="section event-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament">&#x2766;</div>
+                    <p class="section-subtitle">Tata Rakiting Adicara</p>
+                    <h2 class="section-title">Rangkaian Upacara</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <div class="event-cards jawa-events">
+                    <div class="event-card reveal">
+                        <div class="event-icon">&#x1F4A7;</div>
+                        <h3 class="event-name">Siraman</h3>
+                        <p class="event-desc">Upacara mandi kembang untuk penyucian diri calon mempelai sebelum prosesi
+                            pernikahan.</p>
+                        <div class="event-detail">
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4C5;</span>
+                                <span>Minggu, 07 September 2026</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F550;</span>
+                                <span>02:00 WIB</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4CD;</span>
+                                <span>Kediaman Mempelai Wanita</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card reveal">
+                        <div class="event-icon">&#x1F319;</div>
+                        <h3 class="event-name">Midodareni</h3>
+                        <p class="event-desc">Malam tirakatan menjelang hari pernikahan, doa bersama keluarga agar
+                            mempelai bersinar bak bidadari.</p>
+                        <div class="event-detail">
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4C5;</span>
+                                <span>Minggu, 07 September 2026</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F550;</span>
+                                <span>19:00 WIB</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4CD;</span>
+                                <span>Kediaman Mempelai Wanita</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card reveal">
+                        <div class="event-icon">&#x1F48D;</div>
+                        <h3 class="event-name">Ijab Qobul</h3>
+                        <p class="event-desc">Prosesi akad nikah secara agama Islam, mengikat janji suci pernikahan di
+                            hadapan penghulu.</p>
+                        <div class="event-detail">
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4C5;</span>
+                                <span>Senin Legi, 07 September 2026</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F550;</span>
+                                <span>08:00 - 10:00 WIB</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4CD;</span>
+                                <span>Jalan Raya Rembang, 18, Rembang (Pasuruan), Jawa Timur, Indonesia.</span>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="btn-map">
+                            <span>&#x1F4CD;</span> Lihat Lokasi
+                        </a>
+                    </div>
+                    <div class="event-card reveal">
+                        <div class="event-icon">&#x1F91D;</div>
+                        <h3 class="event-name">Panggih / Temu Manten</h3>
+                        <p class="event-desc">Upacara bertemunya kedua mempelai dengan balangan gantal, wiji dadi,
+                            sindur binayang, dan kacar-kucur.</p>
+                        <div class="event-detail">
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4C5;</span>
+                                <span>Senin Legi, 07 September 2026</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F550;</span>
+                                <span>10:30 - 12:00 WIB</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4CD;</span>
+                                <span>Jalan Raya Rembang, 18, Rembang (Pasuruan), Jawa Timur, Indonesia. </span>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="btn-map">
+                            <span>&#x1F4CD;</span> Lihat Lokasi
+                        </a>
+                    </div>
+                    <div class="event-card event-card-wide reveal">
+                        <div class="event-icon">&#x1F389;</div>
+                        <h3 class="event-name">Resepsi / Walimatul 'Ursy</h3>
+                        <p class="event-desc">Acara syukuran &amp; ramah tamah. Para tamu dipersilakan menikmati
+                            hidangan khas Jawa dan memberikan doa restu.</p>
+                        <div class="event-detail">
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4C5;</span>
+                                <span>Senin Legi, 07 September 2026</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F550;</span>
+                                <span>12:00 - 15:00 WIB</span>
+                            </div>
+                            <div class="event-info">
+                                <span class="info-icon">&#x1F4CD;</span>
+                                <span>Jalan Raya Rembang, 18, Rembang (Pasuruan), Jawa Timur, Indonesia. </span>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="btn-map">
+                            <span>&#x1F4CD;</span> Lihat Lokasi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOVE STORY SECTION -->
+        <section id="story" class="section story-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament">&#x2766;</div>
+                    <p class="section-subtitle">Perjalanan Katresnan</p>
+                    <h2 class="section-title">Love Story</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Januari 2020</span>
+                            <h3>Pisanan Kepanggih</h3>
+                            <p>Kita pisanan kepanggih wonten ing acara keraton Surakarta. Pandangan kita kepethuk lan
+                                wonten raos ingkang beda ing manah.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Maret 2020</span>
+                            <h3>Wiwit Celak</h3>
+                            <p>Asring rerembagan lan sami cariyos. Kita nemokaken kathah kecocokan lan wiwit raos
+                                tentrem setunggal kaliyan satunggalipun.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Juni 2020</span>
+                            <h3>Pacaran</h3>
+                            <p>Wonten ing sanggandhaping langit sore ingkang endah, kita mutusaken kangge miwiti
+                                sesambungan lan sami janji kangge njagi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Desember 2025</span>
+                            <h3>Lamaran / Peningsetan</h3>
+                            <p>Sasampunipun 5 taun sesarengan, Raden ngaturi lamar Nimas wonten ing papan pisanan kita
+                                kepanggih. Lan wangsulanipun: Nggih!</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Juni 2026</span>
+                            <h3>Dhaup Ageng</h3>
+                            <p>Insya Allah, kita badhe ngiket janji suci wonten ing ngarsanipun Gusti Alloh SWT kangge
+                                dados kulawarga sakinah, mawaddah, warahmah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament">&#x2766;</div>
+                    <p class="section-subtitle">Kenangan Endah</p>
+                    <h2 class="section-title">Galeri Foto</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <div class="gallery-grid reveal">
+                    <div class="gallery-item" data-index="0">
+                        <img src="img/gallery1.svg" alt="Foto 1">
+                        <div class="gallery-overlay"><span>&#x2766;</span></div>
+                    </div>
+                    <div class="gallery-item" data-index="1">
+                        <img src="img/gallery2.svg" alt="Foto 2">
+                        <div class="gallery-overlay"><span>&#x2766;</span></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+            <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        </div>
+
+        <!-- RSVP SECTION -->
+        <section id="rsvp" class="section rsvp-section">
+            <div class="rsvp-bg"></div>
+            <div class="batik-pattern rsvp-batik"></div>
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament" style="color:var(--accent-light)">&#x2766;</div>
+                    <p class="section-subtitle">Konfirmasi Rawuh</p>
+                    <h2 class="section-title">RSVP</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <div class="rsvp-card reveal">
+                    <form id="rsvpForm" class="rsvp-form">
+                        <div class="form-group">
+                            <label for="rsvpName">Asma (Nama Lengkap)</label>
+                            <input type="text" id="rsvpName" placeholder="Kaserata asma panjenengan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvpAttendance">Konfirmasi Rawuh</label>
+                            <select id="rsvpAttendance" required>
+                                <option value="">-- Pilih --</option>
+                                <option value="hadir">Nggih, kula badhe rawuh</option>
+                                <option value="tidak">Nyuwun pangapunten, mboten saged rawuh</option>
+                                <option value="mungkin">Dereng temtu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvpGuests">Cacahing Tamu</label>
+                            <select id="rsvpGuests">
+                                <option value="1">1 Tiyang</option>
+                                <option value="2">2 Tiyang</option>
+                                <option value="3">3 Tiyang</option>
+                                <option value="4">4 Tiyang</option>
+                                <option value="5">5 Tiyang</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Kirim Konfirmasi</span>
+                            <span class="btn-shimmer"></span>
+                        </button>
+                    </form>
+                    <div id="rsvpSuccess" class="rsvp-success hidden">
+                        <span class="success-icon">&#x2714;</span>
+                        <h3>Matur Nuwun!</h3>
+                        <p>Konfirmasi rawuh panjenengan sampun katampi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WISHES SECTION -->
+        <section id="wishes" class="section wishes-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament">&#x2766;</div>
+                    <p class="section-subtitle">Atur Pambagya</p>
+                    <h2 class="section-title">Ucapan &amp; Donga</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <div class="wishes-wrapper reveal">
+                    <form id="wishesForm" class="wishes-form">
+                        <div class="form-group">
+                            <label for="wishName">Asma (Nama)</label>
+                            <input type="text" id="wishName" placeholder="Asma panjenengan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="wishMessage">Ucapan &amp; Donga</label>
+                            <textarea id="wishMessage" rows="4"
+                                placeholder="Serat ucapan lan donga kangge penganten kekalih..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Kirim Ucapan</span>
+                            <span class="btn-shimmer"></span>
+                        </button>
+                    </form>
+                    <div class="wishes-list" id="wishesList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GIFT SECTION -->
+        <section id="gift" class="section gift-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="javanese-ornament">&#x2766;</div>
+                    <p class="section-subtitle">Kado Tresna</p>
+                    <h2 class="section-title">Wedding Gift</h2>
+                    <div class="ornament-divider">
+                        <img src="img/floral_divider.svg" alt="divider" class="divider-img">
+                    </div>
+                </div>
+                <p class="gift-desc reveal">Donga saha pangestu panjenengan menika karunia ingkang sanget wigatos tumrap
+                    kula kekalih. Ananging menawi panjenengan kersa paring tandha tresna, kula nyawisaken:</p>
+                <div class="gift-cards reveal">
+                    <div class="gift-card">
+                        <div class="gift-icon">&#x1F3E6;</div>
+                        <h3>Bank BCA</h3>
+                        <p class="gift-account">0892244276</p>
+                        <p class="gift-holder">Haikal Rizaldi</p>
+                        <button class="btn-copy" data-copy="1234567890">Salin</button>
+                    </div>
+                    <div class="gift-card">
+                        <div class="gift-icon">&#x1F3E6;</div>
+                        <h3>Bank BSI</h3>
+                        <p class="gift-account">7295518008</p>
+                        <p class="gift-holder">layna Salsabila.</p>
+                        <button class="btn-copy" data-copy="0987654321">Salin</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="batik-pattern footer-batik"></div>
+            <div class="footer-ornament">
+                <div class="gunungan-footer">
+                    <img src="img/Gunungan-Wayang-563x1024-1.webp" alt="Gunungan" class="gunungan-footer-img">
+                </div>
+            </div>
+            <div class="footer-content">
+                <p class="footer-quote">"Wondene katresnan punika sabar, loma, boten drengki, boten gumunggung, boten
+                    kumalungkung."</p>
+                <p class="footer-quran">&#x2014; 1 Korintus 13:4 (Bahasa Jawa)</p>
+                <p class="footer-quote">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan
+                    hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya."</p>
+                <p class="footer-quran">&#x2014; QS. Ar-Rum: 21</p>
+                <div class="footer-names">
+                    <span class="footer-groom">Haikal</span>
+                    <span class="footer-amp">&amp;</span>
+                    <span class="footer-bride">Rifda</span>
+                </div>
+                <p class="footer-thanks">Karawuhan saha pandonga pangestu panjenengan sedaya menika anugerah ingkang
+                    sanget wigatos tumrap kula kekalih.</p>
+                <p class="footer-salam">Wassalamu'alaikum Wr. Wb.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haikal &amp; Rifda &#x2014; Dhaup Ageng Adat Jawi</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/videoplayback (2).m4a" type="audio/mp4">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

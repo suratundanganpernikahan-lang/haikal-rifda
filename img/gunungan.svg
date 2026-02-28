@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="500" viewBox="0 0 300 500">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6d5a8"/>
+      <stop offset="50%" style="stop-color:#c9a96e"/>
+      <stop offset="100%" style="stop-color:#8B6914"/>
+    </linearGradient>
+    <linearGradient id="darkGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a96e"/>
+      <stop offset="100%" style="stop-color:#5a3a1a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- === MAHKOTA / CROWN === -->
+  <!-- Crown base -->
+  <path d="M120 95 L130 60 L140 80 L150 45 L160 75 L170 50 L180 95 Z" 
+    fill="none" stroke="url(#gold)" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M125 90 L133 62 L142 78 L150 48 L158 74 L167 55 L175 90 Z" 
+    fill="url(#gold)" fill-opacity="0.15"/>
+  <!-- Crown jewels -->
+  <circle cx="150" cy="52" r="3" fill="#e6d5a8" opacity="0.7"/>
+  <circle cx="132" cy="68" r="2" fill="#c9a96e" opacity="0.6"/>
+  <circle cx="168" cy="58" r="2" fill="#c9a96e" opacity="0.6"/>
+  <!-- Crown band -->
+  <rect x="118" y="90" width="64" height="8" rx="3" fill="url(#gold)" fill-opacity="0.25" stroke="#c9a96e" stroke-width="1"/>
+  <line x1="125" y1="94" x2="175" y2="94" stroke="#e6d5a8" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- === KEPALA / HEAD === -->
+  <ellipse cx="150" cy="120" rx="28" ry="22" fill="none" stroke="url(#gold)" stroke-width="1.8"/>
+  <ellipse cx="150" cy="120" rx="25" ry="19" fill="url(#gold)" fill-opacity="0.08"/>
+  <!-- Face details -->
+  <!-- Eye -->
+  <ellipse cx="140" cy="115" rx="5" ry="3" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+  <circle cx="139" cy="115" r="1.5" fill="#c9a96e" opacity="0.6"/>
+  <!-- Hidung / Nose - elongated Javanese wayang style -->
+  <path d="M148 118 Q155 115 158 120 Q156 122 150 121" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+  <!-- Mulut / Mouth -->
+  <path d="M138 126 Q144 130 152 127" fill="none" stroke="#c9a96e" stroke-width="0.8" opacity="0.5"/>
+  <!-- Ear ornament -->
+  <circle cx="122" cy="120" r="4" fill="none" stroke="#c9a96e" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="122" cy="120" r="2" fill="#c9a96e" opacity="0.2"/>
+
+  <!-- === LEHER & KALUNG / NECK & NECKLACE === -->
+  <rect x="140" y="140" width="20" height="15" rx="8" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+  <!-- Necklace -->
+  <path d="M128 155 Q135 165 150 168 Q165 165 172 155" fill="none" stroke="url(#gold)" stroke-width="1.2"/>
+  <circle cx="150" cy="168" r="3" fill="#e6d5a8" opacity="0.6"/>
+  <circle cx="140" cy="165" r="2" fill="#c9a96e" opacity="0.4"/>
+  <circle cx="160" cy="165" r="2" fill="#c9a96e" opacity="0.4"/>
+
+  <!-- === BADAN / BODY === -->
+  <!-- Torso -->
+  <path d="M125 155 Q120 180 118 210 Q116 240 120 270 L180 270 Q184 240 182 210 Q180 180 175 155 Z" 
+    fill="url(#gold)" fill-opacity="0.06" stroke="url(#gold)" stroke-width="1.5"/>
+  
+  <!-- Body ornament pattern - batik-like -->
+  <line x1="135" y1="170" x2="165" y2="170" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="133" y1="185" x2="167" y2="185" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="130" y1="200" x2="170" y2="200" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="128" y1="215" x2="172" y2="215" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="125" y1="230" x2="175" y2="230" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="123" y1="245" x2="177" y2="245" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <line x1="121" y1="260" x2="179" y2="260" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <!-- Vertical center line -->
+  <line x1="150" y1="160" x2="150" y2="268" stroke="#c9a96e" stroke-width="0.5" opacity="0.2"/>
+  <!-- Diamond pattern on chest -->
+  <path d="M150 175 L157 185 L150 195 L143 185 Z" fill="none" stroke="#e6d5a8" stroke-width="0.8" opacity="0.4"/>
+  <path d="M150 200 L155 208 L150 216 L145 208 Z" fill="none" stroke="#e6d5a8" stroke-width="0.6" opacity="0.3"/>
+
+  <!-- === SABUK / BELT === -->
+  <rect x="116" y="268" width="68" height="12" rx="4" fill="url(#gold)" fill-opacity="0.15" stroke="#c9a96e" stroke-width="1.2"/>
+  <circle cx="150" cy="274" r="4" fill="#e6d5a8" opacity="0.4" stroke="#c9a96e" stroke-width="0.8"/>
+  
+  <!-- === KAIN / SKIRT (Jarik) === -->
+  <path d="M116 280 Q110 320 108 355 Q106 380 112 400 Q115 410 130 415 
+           L170 415 Q185 410 188 400 Q194 380 192 355 Q190 320 184 280 Z" 
+    fill="url(#gold)" fill-opacity="0.05" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Jarik batik patterns -->
+  <path d="M120 295 Q135 290 150 295 Q165 290 180 295" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <path d="M118 315 Q135 310 150 315 Q165 310 182 315" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <path d="M115 335 Q135 330 150 335 Q165 330 185 335" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <path d="M113 355 Q135 350 150 355 Q165 350 187 355" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <path d="M112 375 Q135 370 150 375 Q165 370 188 375" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <path d="M113 395 Q135 390 150 395 Q165 390 187 395" fill="none" stroke="#c9a96e" stroke-width="0.5" opacity="0.3"/>
+  <!-- Vertical fold lines -->
+  <line x1="135" y1="282" x2="128" y2="412" stroke="#c9a96e" stroke-width="0.4" opacity="0.2"/>
+  <line x1="150" y1="282" x2="150" y2="412" stroke="#c9a96e" stroke-width="0.4" opacity="0.2"/>
+  <line x1="165" y1="282" x2="172" y2="412" stroke="#c9a96e" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- === TANGAN KANAN / RIGHT ARM === -->
+  <!-- Upper arm -->
+  <path d="M175 160 Q195 170 210 185 Q225 200 235 220" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Bracelet -->
+  <circle cx="222" cy="208" r="5" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.5"/>
+  <!-- Forearm + hand pointing up (holding something) -->
+  <path d="M235 220 Q240 240 238 260 Q236 275 240 290" fill="none" stroke="url(#gold)" stroke-width="1.3"/>
+  <!-- Hand -->
+  <path d="M238 288 Q235 295 232 290 Q230 285 234 282" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+  <path d="M240 288 Q243 295 246 290 Q248 285 244 282" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+
+  <!-- === TANGAN KIRI / LEFT ARM === -->
+  <!-- Upper arm -->
+  <path d="M125 160 Q105 170 90 185 Q75 200 65 220" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Bracelet -->
+  <circle cx="78" cy="208" r="5" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.5"/>
+  <!-- Forearm going down -->
+  <path d="M65 220 Q60 245 58 270 Q56 295 60 320" fill="none" stroke="url(#gold)" stroke-width="1.3"/>
+  <!-- Hand -->
+  <path d="M58 318 Q55 325 52 320 Q50 315 54 312" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+  <path d="M60 318 Q63 325 66 320 Q68 315 64 312" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+
+  <!-- === TONGKAT / STICK (wayang control rod) === -->
+  <line x1="240" y1="290" x2="245" y2="460" stroke="url(#darkGold)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="60" y1="320" x2="55" y2="460" stroke="url(#darkGold)" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- === KAKI / FEET === -->
+  <path d="M130 415 L128 445 Q126 455 135 458 L145 458" fill="none" stroke="url(#gold)" stroke-width="1.3"/>
+  <path d="M170 415 L172 445 Q174 455 165 458 L155 458" fill="none" stroke="url(#gold)" stroke-width="1.3"/>
+  <!-- Ankle ornaments -->
+  <circle cx="129" cy="440" r="3" fill="none" stroke="#c9a96e" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="171" cy="440" r="3" fill="none" stroke="#c9a96e" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- === DECORATIVE DOTS === -->
+  <circle cx="150" cy="30" r="2" fill="#e6d5a8" opacity="0.3"/>
+  <circle cx="95" cy="150" r="1.5" fill="#c9a96e" opacity="0.2"/>
+  <circle cx="205" cy="150" r="1.5" fill="#c9a96e" opacity="0.2"/>
+  <circle cx="100" cy="260" r="1.5" fill="#c9a96e" opacity="0.15"/>
+  <circle cx="200" cy="260" r="1.5" fill="#c9a96e" opacity="0.15"/>
+</svg>
