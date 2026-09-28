@@ -1359,6 +1359,110 @@ button {
     color: rgba(255, 255, 255, 0.7)
 }
 
+.rsvp-list-wrapper {
+    max-width: 550px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.rsvp-list-title {
+    font-family: var(--font-display);
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.rsvp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.rsvp-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.rsvp-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.rsvp-list::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+}
+
+.rsvp-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(201, 169, 110, 0.15);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    transition: var(--transition);
+}
+
+.rsvp-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.rsvp-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rsvp-item-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.05rem;
+}
+
+.rsvp-badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rsvp-badge-hadir {
+    background: rgba(46, 117, 89, 0.2);
+    color: #a8f5d0;
+    border: 1px solid rgba(46, 117, 89, 0.4);
+}
+
+.rsvp-badge-tidak {
+    background: rgba(183, 110, 92, 0.2);
+    color: #f5cfc4;
+    border: 1px solid rgba(183, 110, 92, 0.4);
+}
+
+.rsvp-badge-mungkin {
+    background: rgba(201, 169, 110, 0.2);
+    color: var(--accent-light);
+    border: 1px solid rgba(201, 169, 110, 0.4);
+}
+
+.rsvp-item-details {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.rsvp-item-details span {
+    color: var(--accent-light);
+    font-weight: 500;
+}
+
 /* ====== WISHES ====== */
 .wishes-section {
     background: var(--bg-alt)
@@ -1531,7 +1635,9 @@ button {
 }
 
 .gift-holder {
-    font-size: 0.95rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--text-muted);
     margin-bottom: 18px
 }

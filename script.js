@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===== COUNTDOWN TIMER =====
-    const weddingDate = new Date('2026-06-15T08:00:00').getTime();
+    const weddingDate = new Date('2027-03-28T08:00:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -195,7 +195,72 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') lightboxNext.click();
     });
 
-    // ===== RSVP FORM =====
+    // ===== RSVP FORM & LIST =====
+    const rsvpList = document.getElementById('rsvpList');
+
+    function loadRsvps() {
+        const rsvps = JSON.parse(localStorage.getItem('wedding_rsvp') || '[]');
+        if (rsvps.length === 0) {
+            rsvps.push(
+                { name: 'Budi Santoso', attendance: 'hadir', guests: '2', timestamp: new Date(Date.now() - 3600000 * 3).toISOString() },
+                { name: 'Dewi Lestari', attendance: 'mungkin', guests: '1', timestamp: new Date(Date.now() - 3600000 * 8).toISOString() },
+                { name: 'Rian Hidayat', attendance: 'tidak', guests: '1', timestamp: new Date(Date.now() - 3600000 * 24).toISOString() }
+            );
+            localStorage.setItem('wedding_rsvp', JSON.stringify(rsvps));
+        }
+        renderRsvps(rsvps);
+    }
+
+    function renderRsvps(rsvps) {
+        if (!rsvpList) return;
+        rsvpList.innerHTML = '';
+        rsvps.slice().reverse().forEach(rsvp => {
+            const item = document.createElement('div');
+            item.classList.add('rsvp-item');
+            
+            let badgeClass = 'rsvp-badge-mungkin';
+            let badgeText = 'Belum Pasti';
+            if (rsvp.attendance === 'hadir') {
+                badgeClass = 'rsvp-badge-hadir';
+                badgeText = 'Hadir';
+            } else if (rsvp.attendance === 'tidak') {
+                badgeClass = 'rsvp-badge-tidak';
+                badgeText = 'Tidak Hadir';
+            }
+
+            // Fallback for timestamp if missing in older mock data
+            const itemTimestamp = rsvp.timestamp || new Date().toISOString();
+
+            item.innerHTML = `
+                <div class="rsvp-item-header">
+                    <span class="rsvp-item-name">${escapeHtml(rsvp.name)}</span>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span class="rsvp-badge ${badgeClass}">${badgeText}</span>
+                        <button class="btn-delete-rsvp" data-timestamp="${itemTimestamp}" style="background: none; border: none; color: rgba(255, 255, 255, 0.4); font-size: 1.3rem; cursor: pointer; padding: 2px 6px; transition: color 0.2s; line-height: 1;" onmouseover="this.style.color='#ff6b6b'" onmouseout="this.style.color='rgba(255, 255, 255, 0.4)'" title="Hapus">&times;</button>
+                    </div>
+                </div>
+                <div class="rsvp-item-details">
+                    Jumlah Tamu: <span>${escapeHtml(rsvp.guests)} Orang</span>
+                </div>
+            `;
+            rsvpList.appendChild(item);
+        });
+    }
+
+    // Handle RSVP deletion
+    if (rsvpList) {
+        rsvpList.addEventListener('click', (e) => {
+            const deleteBtn = e.target.closest('.btn-delete-rsvp');
+            if (deleteBtn) {
+                const timestamp = deleteBtn.getAttribute('data-timestamp');
+                let rsvps = JSON.parse(localStorage.getItem('wedding_rsvp') || '[]');
+                rsvps = rsvps.filter(item => (item.timestamp || '') !== timestamp);
+                localStorage.setItem('wedding_rsvp', JSON.stringify(rsvps));
+                renderRsvps(rsvps);
+            }
+        });
+    }
+
     rsvpForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const name = document.getElementById('rsvpName').value;
@@ -209,6 +274,9 @@ document.addEventListener('DOMContentLoaded', () => {
             timestamp: new Date().toISOString()
         });
         localStorage.setItem('wedding_rsvp', JSON.stringify(rsvpData));
+
+        // Update list display
+        renderRsvps(rsvpData);
 
         // Show success
         rsvpForm.classList.add('hidden');
@@ -274,6 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     loadWishes();
+    loadRsvps();
 
     // ===== COPY ACCOUNT NUMBER =====
     document.querySelectorAll('.btn-copy').forEach(btn => {
